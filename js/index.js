@@ -40,3 +40,66 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+let navigation = document.querySelectorAll("nav a")
+navigation.forEach(function(items, index) {
+  items.textContent = siteContent.nav[`nav-item-${index +1}`]
+})
+console.log(navigation)
+
+let image= document.querySelector(".logo")
+image.src="img/logo.png"
+
+let headerimage=document.querySelector("#cta-img")
+headerimage.setAttribute('src', siteContent["cta"]["img-src"])
+
+ let contenth4 = document.querySelector("div h4")
+contenth4.textContent= siteContent["main-content"]["features-h4"]
+
+let textcontent1=document.querySelector(".text-content p")
+textcontent1.textContent=siteContent["main-content"]["features-content"]
+
+let textcontent2=document.querySelector("div h4")
+textcontent2.textContent=siteContent["main-content"]["about-h4"]
+
+let middleImage=document.querySelector(".middle-img")
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+let bottomh4one=document.querySelector(".bottom-content h4")
+bottomh4one.textContent =siteContent["main-content"]["services-h4"]
+
+let bottomcontent1=document.querySelector(".bottom-content p")
+bottomcontent1.textContent=siteContent["main-content"]["services-content"]
+
+let bottomh4two=document.querySelectorAll(".bottom-content h4")
+bottomh4two.textContent=siteContent["main-content"]["product-h4"]
+
+let bottomcontent2=document.querySelector(".bottom-content p")
+bottomcontent2.textContent=siteContent["main-content"]["product-content"]
+
+let bottomh4three=document.querySelector(".bottom-content h4")
+bottomh4three.textContent=siteContent["main-content"]["vision-h4"]
+
+let bottomcontent3=document.querySelector(".bottom-content p")
+bottomcontent3.textContent=siteContent["main-content"]["vision-content"]
+
+let contact =document.querySelector(".contact h4")
+contact.textContent=siteContent["contact"]["contact-h4"]
+
+let contactinfo=document.querySelector(".contact p")
+contactinfo.textContent=siteContent["contact"]["address"]
+
+let ctatext=document.querySelector(".cta-text")
+ctatext.textContent=siteContent["cta"]["h1"]
+
+let ctabutton=document.querySelector("button")
+ctabutton.setAttribute('button', siteContent["cta"]["button"])
+
+let contactnum=document.querySelector(".contact p")
+contactnum.textContent=siteContent["contact"]["phone"]
+
+let contactemail=document.querySelector(".contact p")
+contactemail.textContent=siteContent["contact"]["email"]
+let footer=document.querySelector("footer p")
+footer.textContent=siteContent["footer"]["copyright"]
